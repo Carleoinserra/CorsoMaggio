@@ -27,3 +27,15 @@ do {
     var x = parseInt(prompt("Inserisci un numero: "));
 }
 while (x < 10)
+
+var cont = 0; 
+var somma = 0;
+var iterazioni = parseInt(prompt("Quanti numeri vuoi inserire: "));
+do {
+    var x = parseInt(prompt("Inserisci un numero: "));
+    cont++;
+    somma += x;
+}
+while (cont < iterazioni)
+
+console.log(somma);
