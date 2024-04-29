@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calcola(){
+            var nodo = document.getElementById("result");
+            var num = parseInt(document.getElementById("num").value);
+            var cont = 0;
+            nodo.textContent = "La tabellina del " + num;
+            while (cont <= 10){
+                
+                var nuovoNodo = document.createElement("p");
+                nuovoNodo.textContent = num * cont; // Imposta il testo del nuovo elemento
+                nodo.appendChild(nuovoNodo);
+                cont++;
+                 
+            }
+
+        }
+    </script>
+
+</head>
+<body>
+  Scrivi un numero: <input type = "text" id = "num"> <br>
+  <button onclick="calcola()">Calcola</button> 
+  <p id = "result"></p>
+</body>
+</html>
